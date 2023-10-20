@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes color-link {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: cyan;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+body {
+    display: flexbox;
+    color: red;
+    background-color: black;
+    font-family: "Press Start 2P";
+}
+
+header {
+    margin: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    animation: color-link 1.5s linear infinite;
+    font-size: 6rem;
+}
+
+h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+a {
+    transition: all .2s linear;
+}
+
+a:hover{
+    animation: color-link 1s linear infinite ;
+}
+
+@keyframes color-link {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: cyan;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 1rem;
+    border: red dashed 2pt;
+    padding: 1rem;
+    text-align: center;
+}
+
+li {
+    margin: .5rem;
+    font-size: 2rem;
+    display: ;
+}
+
+.mainnav ul {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.currentp a {
+    color: greenyellow;
+}
+
+@media screen and (min-width: 800px){
+    body {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    header {
+        grid-row: 1/6;
+        grid-column: span 6;
+        grid-column: 4/5;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 8rem;
+    }
+
+    nav {
+        grid-row: 7/8;
+        grid-column: 4/5;
+    }
+
+    main {
+        grid-row: 2/4;
+        grid-column: 2/7;
+    }
+
+    main div {
+        max-width: 1100px;
+    }
+
+    .mainnav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .mainnav li {
+        font-size: 3rem;
+        margin: 2rem;
+    }
+}
