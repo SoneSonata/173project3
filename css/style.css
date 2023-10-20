@@ -28,6 +28,24 @@
     }
 }
 
+@keyframes creditrise{
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 1rem;
+    }
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     display: flexbox;
     color: red;
@@ -43,7 +61,7 @@ h1 {
     margin-bottom: 1rem;
     text-align: center;
     color: white;
-    animation: color-link 1.5s linear infinite;
+    animation: creditrise 1.5s ease-in forwards, color-link 1.5s linear 1.5s infinite;
     font-size: 6rem;
 }
 
@@ -63,6 +81,7 @@ a {
 a:hover{
     animation: color-link 1s linear infinite ;
 }
+
 
 @keyframes color-link {
     0% {
@@ -95,9 +114,9 @@ ul {
 }
 
 li {
-    margin: .5rem;
+    margin: 2rem;
     font-size: 2rem;
-    display: ;
+    
 }
 
 .mainnav ul {
@@ -105,6 +124,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    animation: fadein .5s ease-in 1.5s forwards;
+    opacity: 0;
     
 }
 
@@ -149,7 +170,7 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around
+        justify-content: space-around;
     }
 
     .mainnav li {
