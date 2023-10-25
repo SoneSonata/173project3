@@ -57,12 +57,20 @@ header {
     margin: 1rem;
 }
 
-h1 {
+.mainhead {
     margin-bottom: 1rem;
     text-align: center;
     color: white;
     animation: creditrise 1.5s ease-in forwards, color-link 1.5s linear 1.5s infinite;
     font-size: 6rem;
+}
+.aboutmain {
+    text-align: center;
+}
+
+.gohome a {
+    animation: color-link 1.5s linear infinite;
+    text-decoration: none;
 }
 
 h2 {
@@ -133,6 +141,16 @@ li {
     color: greenyellow;
 }
 
+.sociallink{
+    max-width: 100px;
+}
+
+.pfp {
+    width: 100%;
+    height:auto;
+    max-width: 250px;
+}
+
 @media screen and (min-width: 800px){
     body {
         display: grid;
@@ -140,26 +158,65 @@ li {
         grid-template-columns: repeat(7,1fr);
     }
 
-    header {
+    #homehead {
         grid-row: 1/6;
         grid-column: span 6;
         grid-column: 4/5;
         text-align: center;
     }
 
-    h1 {
+    #bio{
+        width: 100vw;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    .pic{
+        grid-column: span 2;
+        grid-column: 2/4;
+    }
+
+    .pfp{
+        max-width: 400px;
+    }
+
+
+    .interests{
+        grid-column: 5/6;
+        margin-bottom: 1rem;
+    }
+
+    .sanda{
+        grid-column: 5/6;
+        margin-top: 0;
+    }
+
+    .contacts{
+        margin-top: 10rem;
+        margin-right: 3rem;
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .sociallink{
+        max-width: 100px;
+        margin: 1rem;
+    }
+
+    .contacts h2{
+        animation: color-link 1.5s linear infinite;
+    }
+
+    .mainhead {
         margin-top: 2rem;
         font-size: 8rem;
     }
 
-    nav {
+    
+    .mainnav {
         grid-row: 7/8;
         grid-column: 4/5;
-    }
-
-    main {
-        grid-row: 2/4;
-        grid-column: 2/7;
     }
 
     main div {
