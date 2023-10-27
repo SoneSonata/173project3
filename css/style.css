@@ -127,6 +127,30 @@ li {
     
 }
 
+form {
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 700px;
+    border: 5pt solid #FFFFFF;
+    background-color: #FE1313;
+}
+
+label {
+    color: #FFFFFF;
+}
+
+input, textarea {
+    padding: .5rem;
+    width: 100%;
+    background-color: #272727;
+    color: #FFFFFF;
+}
+
+fieldset {
+    outline: none;
+    border: none;  
+}
+
 .mainnav ul {
     border: none;
     display: flex;
@@ -145,10 +169,42 @@ li {
     max-width: 100px;
 }
 
+.contactform{
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+    border: 2pt red dashed;
+}
+
 .pfp {
     width: 100%;
     height:auto;
     max-width: 250px;
+}
+
+.pro1, .pro2, .pro3{
+    border: 2pt dashed red;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+}
+
+.thumb{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    display: block;
+}
+
+.mission, .strategy{
+    margin: 1rem;
+    border: 2pt red dashed;
+    padding: 1rem;
+    text-align: center;
+}
+
+.mission p, .strategy p{
+    font-family: Lato;
 }
 
 @media screen and (min-width: 800px){
@@ -193,7 +249,7 @@ li {
     }
 
     .contacts{
-        margin-top: 10rem;
+        margin-top: 8rem;
         margin-right: 3rem;
         grid-column: 1/5;
         grid-row: 2/3;
@@ -234,4 +290,40 @@ li {
         font-size: 3rem;
         margin: 2rem;
     }
+
+    .workhead {
+        text-align: center;
+        grid-column: 3/5;
+    }
+
+    .pro1, .pro2, .pro3 {
+        grid-column: 3/5;
+        width: 70vw;
+        text-align: center;
+
+    }
+
+    .pro1 h2, .pro2 h2, .pro3 h2 {
+        margin-top: 5rem;
+    }
+
+    .thumb{
+        margin-right: 6rem;
+        margin-left: 5rem;
+        max-width: 500px;
+    }
+
+    .mission, .strategy{
+        grid-column: 3/5;
+        display: block;
+        text-align: center;
+    }
+
+    .mission p, .strategy p{
+        max-width: 50ch;
+        margin: auto;
+        font-size: 20pt;
+    }
+
+    
 }
